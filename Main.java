@@ -88,8 +88,7 @@ class Main {
                 openSet.add(newNode);
             }
         }
-        return new ArrayList<Node>() {
-        };
+        return new ArrayList<Node>();
     }
 
     public static void main(String[] args){
