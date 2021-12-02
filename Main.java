@@ -67,9 +67,8 @@ class Main {
         openSet.add(startNode);
         while (openSet.size() > 0) {
             Node currentNode = findNodeWithLowestF(openSet);
-            if (currentNode.equals(endNode)) {
+            if (currentNode.equals(endNode))
                 return reconstructPath(currentNode);
-            }
             openSet.remove(currentNode);
             usedSet.add(currentNode);
             for (int[] possibleDirection : possibleDirections) {
@@ -93,7 +92,7 @@ class Main {
         };
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
 
         int[][] map = {
                 { 0, 1, 0, 0, 0, 0, 0 },
