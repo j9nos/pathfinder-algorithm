@@ -17,20 +17,16 @@ class Node {
     }
     @Override
     public boolean equals(Object o) {
-        if (o == this) {
+        if (o == this)
             return true;
-        }
-        if (!(o instanceof Node)) {
+        if (!(o instanceof Node))
             return false;
-        }
         Node other = (Node) o;
-        boolean isEqual = (this.x == other.x && this.y == other.y);
-        return isEqual;
+        return (this.x == other.x && this.y == other.y);
     }
     @Override
     public int hashCode() {
-        int hashed = 999 * x * y;
-        return hashed;
+        return 999 * x * y;
     }
 }
 
